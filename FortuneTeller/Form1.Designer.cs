@@ -159,9 +159,8 @@
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(287, 214);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(60, 16);
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 7;
-            this.checkBox7.Text = "두려움";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -193,7 +192,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(115, 139);
+            this.checkBox8.Location = new System.Drawing.Point(121, 139);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(48, 16);
             this.checkBox8.TabIndex = 12;
@@ -204,7 +203,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(169, 138);
+            this.checkBox9.Location = new System.Drawing.Point(175, 138);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(48, 16);
             this.checkBox9.TabIndex = 13;
