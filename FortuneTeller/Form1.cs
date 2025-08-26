@@ -56,5 +56,32 @@ namespace FortuneTeller
         {
 
         }
+
+        private void dToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FromHistory from = new FromHistory();
+            from.Show();
+        }
+
+        private void 끝내기ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void 표춘텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAbout from = new FormAbout();
+            from.Show();
+        }
     }
 }
