@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FortuneTeller
 {
-    public partial class FromHistory : Form
+    public partial class FormHistory : Form
     {
-        public FromHistory()
+        public FormHistory()
         {
             InitializeComponent();
+        }
+
+        private void buttonRefrsh_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

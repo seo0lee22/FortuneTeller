@@ -12,9 +12,10 @@ namespace FortuneTeller
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
-            InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace FortuneTeller
 
         private void dToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -69,8 +70,16 @@ namespace FortuneTeller
 
         private void dToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FromHistory from = new FromHistory();
-            from.Show();
+            FormHistory form = Application.OpenForms["FormHistory"] as FormHistory;
+            if (form != null)
+            {
+                form.Activate();
+            }
+            else
+            {
+                form = new FormHistory();
+                form.Show();
+            }
         }
 
         private void 끝내기ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -81,7 +90,7 @@ namespace FortuneTeller
         private void 표춘텔러정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAbout from = new FormAbout();
-            from.Show();
+            from.ShowDialog();
         }
     }
 }

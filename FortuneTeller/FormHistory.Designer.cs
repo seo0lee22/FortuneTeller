@@ -1,6 +1,6 @@
 ﻿namespace FortuneTeller
 {
-    partial class FromHistory
+    partial class FormHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@
             this.buttonRefrsh.TabIndex = 0;
             this.buttonRefrsh.Text = "새로 불러오기";
             this.buttonRefrsh.UseVisualStyleBackColor = true;
+            this.buttonRefrsh.Click += new System.EventHandler(this.buttonRefrsh_Click);
             // 
             // listBox1
             // 
