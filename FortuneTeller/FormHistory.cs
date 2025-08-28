@@ -1,5 +1,4 @@
-﻿using FortuneTeller;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FortuneTeller32
+namespace FortuneTeller
 {
     public partial class FormHistory : Form
     {
@@ -44,6 +43,16 @@ namespace FortuneTeller32
                 MessageBox.Show($"알 수 없는 오류가 발생했어요.\n{ex.Message}", "알 수 없는 오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonRefrsh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

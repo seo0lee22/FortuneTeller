@@ -1,4 +1,4 @@
-﻿namespace FortuneTeller32
+﻿namespace FortuneTeller
 {
     partial class FormHistory
     {
