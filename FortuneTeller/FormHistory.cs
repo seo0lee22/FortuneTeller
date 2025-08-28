@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FortuneTeller
@@ -20,7 +15,14 @@ namespace FortuneTeller
         {
             this.form1 = form;
             InitializeComponent();
+            UpdateHistory();
+        }
+
+        public void UpdateHistory()
+        {
             LoadHistory();
+            IbHistory.Items.Clear();
+            IbHistory.Items.AddRange(history.ToArray());
         }
 
         private void LoadHistory()
@@ -47,12 +49,13 @@ namespace FortuneTeller
 
         private void buttonRefrsh_Click(object sender, EventArgs e)
         {
-
+            UpdateHistory();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string message = history[IbHistory.SelectedIndex];
+            form1.LoadHistory(message);
         }
     }
 }

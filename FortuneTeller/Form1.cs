@@ -162,5 +162,21 @@ namespace FortuneTeller
         {
 
         }
+
+        public void LoadHistory(string history)
+        {
+            // 19820108 21|사주사주사주사주|뭐시기뭐시기 
+            // -->   [0] 19820108 21 / [1] 사주사주사주사주 / [2] 뭐시기뭐시기
+            string birthday = history.Split('|')[0].Split(' ')[0];
+            string birthyear = history.Split('|')[0].Split(' ')[1];
+            tbBirthday.Text = birthday;
+            tbBirthyear.Text = birthyear;
+
+            string saju = history.Split('|')[1];
+            string message = history.Split('|')[2];
+            tbResult.Text = $"{birthday} {birthyear}{Environment.NewLine}"
+               + $"{saju}{Environment.NewLine}"
+               + $"{message}";
+        }
     }
 }
