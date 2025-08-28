@@ -9,7 +9,7 @@ namespace FortuneTeller
     public partial class FormHistory : Form
     {
         List<string> history;
-        Form form1;
+        Form1 form1;
 
         public FormHistory(Form1 form)
         {
